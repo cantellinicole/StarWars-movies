@@ -3,8 +3,5 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/android-basics-kotlin-unscramble-app" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/databinding-samples" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/projeto_compiladores" vcs="Git" />
   </component>
 </project>
