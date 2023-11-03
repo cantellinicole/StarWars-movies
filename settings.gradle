@@ -3,6 +3,7 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven { url "https://kotlin.bintray.com/kotlinx" }
     }
 }
 dependencyResolutionManagement {
@@ -10,12 +11,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven {
-            url = uri("https://maven.pkg.jetbrains.space/public/p/ktor/eap")
-        }
-        maven{
-            url = uri("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev")
-        }
+        maven { url "https://kotlin.bintray.com/kotlinx" }
     }
 }
 rootProject.name = "starwars-movies"
