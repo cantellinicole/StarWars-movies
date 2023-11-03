@@ -5,8 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <FrameLayout
-        android:id="@+id/frameMovieCover"
+    <ImageView
+        android:id="@+id/imageMovieCover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,7 +17,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/frameMovieCover"
+        app:layout_constraintStart_toEndOf="@id/imageMovieCover"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="24dp"
         android:layout_marginStart="24dp"
@@ -30,7 +30,7 @@
         android:id="@+id/tvDirectorName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/frameMovieCover"
+        app:layout_constraintStart_toEndOf="@id/imageMovieCover"
         app:layout_constraintTop_toBottomOf="@id/tvTitle"
         android:layout_marginTop="16dp"
         android:layout_marginStart="24dp"
@@ -43,7 +43,7 @@
         android:id="@+id/tvReleaseDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/frameMovieCover"
+        app:layout_constraintStart_toEndOf="@id/imageMovieCover"
         app:layout_constraintTop_toBottomOf="@id/tvDirectorName"
         android:layout_marginTop="16dp"
         android:layout_marginStart="24dp"
