@@ -6,7 +6,7 @@ import retrofit2.http.GET
 internal interface ApiService {
 
     @GET("movies")
-    suspend fun getMovies() : Result<MoviesResponse>
+    suspend fun getMovies() : Result<List<MoviesResponse>>
 
 
 }

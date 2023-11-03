@@ -9,7 +9,7 @@ internal class MoviesRepositoryImpl(
     private val mapper: MoviesMapper
 ) {
 
-    suspend fun getMovies() : Result<Movies> {
+    suspend fun getMovies() : Result<List<Movies>> {
         return dataSource.getMovies().map { mapper.mapFromResponse(it) }
     }
 }

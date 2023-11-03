@@ -5,13 +5,15 @@ import com.example.starwars_movies.feature.domain.model.Movies
 
 internal class MoviesMapper {
 
-    fun mapFromResponse(response: MoviesResponse) : Movies {
-        return Movies (
-            cover = response.cover,
-            title = response.title,
-            director = response.director,
-            episodeId = response.episodeId,
-            releaseDate = response.releaseDate
-        )
+    fun mapFromResponse(response: List<MoviesResponse>) : List<Movies> {
+        return  response.map {
+            Movies(
+                cover = it.cover,
+                title = it.title,
+                director = it.director,
+                episodeId = it.episodeId,
+                releaseDate = it.releaseDate
+            )
+        }
     }
 }
