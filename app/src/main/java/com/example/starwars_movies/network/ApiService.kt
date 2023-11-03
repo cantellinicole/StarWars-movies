@@ -8,5 +8,4 @@ internal interface ApiService {
     @GET("movies")
     suspend fun getMovies() : Result<List<MoviesResponse>>
 
-
 }
