@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imageMovieCover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/imageMovieCover"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        tools:text="Star Wars Movie"/>
+
+    <TextView
+        android:id="@+id/tvDirectorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/imageMovieCover"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        tools:text="director: Irvin Sermen "/>
+
+    <TextView
+        android:id="@+id/tvReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/imageMovieCover"
+        app:layout_constraintTop_toBottomOf="@id/tvDirectorName"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        tools:text="release date: 22-04-1977"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
