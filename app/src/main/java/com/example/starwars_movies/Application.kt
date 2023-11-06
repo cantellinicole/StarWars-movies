@@ -13,6 +13,11 @@ class MoviesApplication : Application() {
 
     private fun setupKoin() {
         startKoin {
+            modules(
+                MoviesModule().dataModule,
+                MoviesModule().domainModule,
+                MoviesModule().presentationModule
+            )
             val koin = KoinSetup()
             koin.loadModules()
         }

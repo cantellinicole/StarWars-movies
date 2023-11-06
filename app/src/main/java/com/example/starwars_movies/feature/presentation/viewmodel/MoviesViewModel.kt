@@ -42,7 +42,10 @@ internal class MoviesViewModel(
 
     private fun showError() {
         _moviesViewState.update {
-            it.copy(isFailure = true, isLoading = false)
+            it.copy(
+                isFailure = true,
+                isLoading = false
+            )
         }
     }
 

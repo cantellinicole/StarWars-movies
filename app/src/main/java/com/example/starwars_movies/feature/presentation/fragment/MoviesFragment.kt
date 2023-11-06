@@ -29,7 +29,7 @@ internal class MoviesFragment : Fragment(R.layout.movies_fragment){
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.moviesViewState.collect{
-                    if(it.movies.isNullOrEmpty()) {
+                    if(it.movies.isNullOrEmpty().not()) {
                        setupView(it.movies)
                     }
                 }
