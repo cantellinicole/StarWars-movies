@@ -16,7 +16,7 @@ class MoviesApi {
     }
 
     companion object {
-        const val BASE_URL = "ttps://api.npoint.io/dc12046175d1c54574fb"
+        const val BASE_URL = "https://api.npoint.io/dc12046175d1c54574fb"
     }
 
 }
