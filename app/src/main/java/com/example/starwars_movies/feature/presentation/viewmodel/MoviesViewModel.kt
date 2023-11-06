@@ -22,7 +22,7 @@ internal class MoviesViewModel(
         getMovies()
     }
 
-    private fun getMovies() {
+    internal fun getMovies() {
         viewModelScope.launch(Dispatchers.IO) {
             val result = getMoviesUseCase.getMovies()
             result
